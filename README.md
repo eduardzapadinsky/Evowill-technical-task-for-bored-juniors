@@ -1,4 +1,3 @@
-```markdown
 # Random Activity Generator
 
 This Python program utilizes the Bored API to fetch and manage random activities. Users can filter activities based on type, participants, price, and accessibility, and save matching results in a SQLite database.
