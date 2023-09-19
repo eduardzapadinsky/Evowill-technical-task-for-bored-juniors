@@ -25,33 +25,34 @@ class BoredAPIWrapper:
         """
         Fetch a random activity from the Bored API with optional filtering.
 
-        Args:
-            activity_type (str): The type of activity to filter (e.g., "education").
-            participants (int): The number of participants for the activity.
-            price_min (float): The minimum price for the activity.
-            price_max (float): The maximum price for the activity.
-            accessibility_min (float): The minimum accessibility for the activity.
-            accessibility_max (float): The maximum accessibility for the activity.
+        # Args:
+        #     activity_type (str): The type of activity to filter (e.g., "education").
+        #     participants (int): The number of participants for the activity.
+        #     price_min (float): The minimum price for the activity.
+        #     price_max (float): The maximum price for the activity.
+        #     accessibility_min (float): The minimum accessibility for the activity.
+        #     accessibility_max (float): The maximum accessibility for the activity.
 
         Returns:
             dict or None: A dictionary representing the fetched activity or None if unsuccessful.
         """
 
-        params = {}
-        if activity_type:
-            params["type"] = activity_type
-        if participants:
-            params["participants"] = participants
-        if price_min:
-            params["price_min"] = price_min
-        if price_max:
-            params["price_max"] = price_max
-        if accessibility_min:
-            params["accessibility_min"] = accessibility_min
-        if accessibility_max:
-            params["accessibility_max"] = accessibility_max
-
-        response = requests.get(self.base_url, params=params)
+        # params = {}
+        # if activity_type:
+        #     params["type"] = activity_type
+        # if participants:
+        #     params["participants"] = participants
+        # if price_min:
+        #     params["price_min"] = price_min
+        # if price_max:
+        #     params["price_max"] = price_max
+        # if accessibility_min:
+        #     params["accessibility_min"] = accessibility_min
+        # if accessibility_max:
+        #     params["accessibility_max"] = accessibility_max
+        #
+        # response = requests.get(self.base_url, params=params)
+        response = requests.get(self.base_url)
         if response.status_code == 200:
             return response.json()
         else:
