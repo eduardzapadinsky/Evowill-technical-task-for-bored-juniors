@@ -13,7 +13,7 @@ This Python program utilizes the Bored API to fetch and manage random activities
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/yourusername/random-activity-generator.git
+   git clone https://github.com/eduardzapadinsky/Evowill-technical-task-for-bored-juniors
    ```
 
 2. Navigate to the project directory:
